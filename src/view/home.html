@@ -1,11 +1,259 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../output.css" rel="stylesheet">
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../output.css" rel="stylesheet" />
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Reem+Kufi:wght@400..700&display=swap");
+  </style>
+  </head>
+  <style>
+  #app {
+    font-family: "Cairo", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../img/مدينة-صنعاء.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+
+  <body class="w-full">
+    <!-- section 1 -->
+    <div id="app" class="w-full h-screen">
+      <!-- Header -->
+      <div
+        class="w-full h-[60px] flex flex-row justify-between px-[40px] items-center">
+        <div class="flex items-center mt-7">
+          <img src="../../img/Group 1171275883.svg" width="80" alt />
+          <h5 class="text-[16px] text-white font-bold mr-[10px]">
+            صنعاني للرحلات
+          </h5>
+        </div>
+
+        <div
+          class="flex items-center justify-around text-black text-[14px] font-bold bg-[#d4d3d2] h-full mb-5 rounded-b-3xl w-1/2 -roun">
+          <a href>الرئيسية</a>
+          <a href>رحلات</a>
+          <a href>عنا</a>
+          <a href>تواصل معنا</a>
+        </div>
+
+        <a href="./Register.html"
+          class="text-[14px] px-4 py-1 text-white border border-white rounded-2xl">تسجيل
+          الخروج</a>
+      </div>
+
+      <!-- Content -->
+      <div class="w-2/3 mx-auto mt-[60px] flex flex-col">
+        <!-- Title -->
+        <div class="flex gap-2 items-center">
+          <div
+            class="border-r-[8px] h-[125px] rounded-xl border-[#cdcdcd]"></div>
+          <div style="line-height: 70px"
+            class="w-full h-full flex flex-col items-start justify-start">
+            <h1 class="text-[#cdcdcd] text-[70px]">تمتع برحلات مريحة</h1>
+            <h1 class="text-[#cdcdcd] text-[70px]">حسب اختيارك</h1>
+          </div>
+        </div>
+        <!-- Card  -->
+        <div class="flex flex-col mt-[70px]">
+          <div class="flex flex-row">
+            <button
+              class="bg-[#f0efef] px-[35px] py-1 text-[22px] rounded-tr-md border-l border-gray-600">
+              عامة
+            </button>
+            <button
+              class="bg-[#e5e3e3] px-[35px] py-1 text-[22px] rounded-tl-md">
+              خاصة
+            </button>
+          </div>
+          <div
+            class="bg-[#f0efef] rounded-b-md rounded-tl-md px-[20px] py-[50px]">
+            <div
+              class="w-full h-full bg-white rounded-2xl px-5 py-4 flex justify-between items-center">
+              <!-- Button Search -->
+              <button
+                class="bg-black h-min flex flex-row py-3 px-7 rounded-3xl gap-3 items-center">
+                <h5 class="text-white w-[80px]">Search</h5>
+                <img src="../../img/SVG.svg" alt />
+              </button>
+
+              <!-- From Saana -->
+              <div
+                class="flex flex-col gap-[5px] justify-start text-[#737373] border-l-[1px] border-[#737373] px-[6px]">
+                <h5 class="font-bold">من</h5>
+                <div class="flex gap-[4px] justify-start">
+                  <img src="../../img/location.svg.svg" alt />
+                  <h5 class="text-black font-bold">صنعـــاء</h5>
+                  <img class="mr-[20px]" src="../../img/dropdown.svg fill.svg"
+                    alt />
+                </div>
+              </div>
+              <!-- to Aden -->
+              <div
+                class="flex flex-col gap-[5px] justify-start text-[#737373] border-l-[1px] border-[#737373] px-[6px]">
+                <h5 class="font-bold">الى</h5>
+                <div class="flex gap-[4px] justify-start">
+                  <img src="../../img/location.svg.svg" alt />
+                  <h5 class="text-black font-bold">حضرمـــوت</h5>
+                  <img class="mr-[20px]" src="../../img/dropdown.svg fill.svg"
+                    alt />
+                </div>
+              </div>
+              <!-- date -->
+              <div
+                class="flex flex-col gap-[5px] justify-start text-[#737373] border-l-[1px] border-[#737373] px-[6px]">
+                <h5 class="font-bold">التاريخ</h5>
+                <div class="flex gap-[4px] justify-start">
+                  <img src="../../img/calendar 01.svg" alt />
+                  <h5 class="text-black font-bold">2025-2-5</h5>
+                  <img class="mr-[20px]" src="../../img/dropdown.svg fill.svg"
+                    alt />
+                </div>
+              </div>
+              <!-- vip -->
+              <div
+                class="flex flex-col gap-[5px] justify-start text-[#737373] px-[6px]">
+                <h5 class="font-bold">النوع</h5>
+                <div class="flex gap-[4px] justify-start items-start">
+                  <img src="../../img/image 1574.svg" alt />
+                  <h5 class="text-black font-bold">VIP</h5>
+                  <img class="mr-[20px]" src="../../img/dropdown.svg fill.svg"
+                    alt />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section Travel today 2 -->
+    <div class="w-[95%] h-screen bg-[#f0efef] mx-auto mt-7 flex-col flex items-center">
+      <!-- Title -->
+      <h5 class="text-[50px] font-bold text-[#3b3b3b]">الرحلات اليومية</h5>
+      <!-- Card Serves -->
+      <div class="w-[80%] h-min justify-center mt-5 items-center grid grid-cols-3 gap-[50px]">
+        <!-- Card 1  -->
+        <div
+          class="relative shadow-md bg-white h-min w-full flex rounded-2xl flex-col justify-between overflow-hidden">
+          <img src="../../img/AlmahrahPost2020-06-07-978970.png" alt />
+          <div class="absolute  flex flex-col items-center left-[5px] top-[30%]">
+           <div class=" w-[80px] h-[80px] mb-[30px] shadow-2xl p-[2px] bg-white rounded-md">
+            <img
+            src="../../img/2020_toyota_land-cruiser_4dr-suv_base_fq_oem_2_1600-640x360.png"
+            width="100"
+             />
+           </div>
+             <h5 class="text-[40px] font-extrabold">12</h5>
+             <h5 class="text-[40px] font-extrabold">الف</h5>
+          </div>
+          <div class="flex mt-5 gap-2 w-5/6 mx-auto">
+            <div class="bg-[#9eefd9] py-2 px-1 h-[170px] flex flex-col justify-around rounded-lg">
+              <img src="../../img/location.svg copy.svg" width="24" />
+              <img src="../../img/location.svg copy.svg" width="24" />
+              <img src="../../img/image 1575.svg" width="24" />
+              <img src="../../img/calendar-check.svg" width="24" />
+            </div>
+            <div class="bg-[#9eefd9] py-2 items-center px-2 h-[170px] flex flex-col justify-around rounded-lg">
+              <h5 class="text-[#07002c] font-bold text-[16px]">مــــــن</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">إلــــــى</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">الوقت</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">التاريخ</h5>
+            </div>
+            <div class="py-2 items-center px-2 h-[170px] flex flex-col justify-around rounded-lg">
+              <h5 class="text-black font-bold text-[20px]">صنعـــاء</h5>
+              <h5 class="text-black font-bold text-[20px]">عـــــــــدن</h5>
+              <h5 class="text-black font-bold text-[20px]">10:30ص</h5>
+              <h5 class="text-black font-bold text-[20px]">  2025-2-5</h5>
+            </div>
+          </div>
+          <button class="bg-[#33387f] mx-auto mt-3 mb-3 text-white rounded-lg w-5/6 py-2">احجز مقعدك الان</button>
+        </div>
+        <!-- Card 2  -->
+        <div
+          class="relative shadow-md bg-white h-min w-full flex rounded-2xl flex-col justify-between overflow-hidden">
+          <img src="../../img/AlmahrahPost2020-06-07-978970.png" alt />
+          <div class="absolute  flex flex-col items-center left-[5px] top-[30%]">
+           <div class=" w-[80px] h-[80px] mb-[30px] shadow-2xl p-[2px] bg-white rounded-md">
+            <img
+            src="../../img/2020_toyota_land-cruiser_4dr-suv_base_fq_oem_2_1600-640x360.png"
+            width="100"
+             />
+           </div>
+             <h5 class="text-[40px] font-extrabold">12</h5>
+             <h5 class="text-[40px] font-extrabold">الف</h5>
+          </div>
+          <div class="flex mt-5 gap-2 w-5/6 mx-auto">
+            <div class="bg-[#9eefd9] py-2 px-1 h-[170px] flex flex-col justify-around rounded-lg">
+              <img src="../../img/location.svg copy.svg" width="24" />
+              <img src="../../img/location.svg copy.svg" width="24" />
+              <img src="../../img/image 1575.svg" width="24" />
+              <img src="../../img/calendar-check.svg" width="24" />
+            </div>
+            <div class="bg-[#9eefd9] py-2 items-center px-2 h-[170px] flex flex-col justify-around rounded-lg">
+              <h5 class="text-[#07002c] font-bold text-[16px]">مــــــن</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">إلــــــى</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">الوقت</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">التاريخ</h5>
+            </div>
+            <div class="py-2 items-center px-2 h-[170px] flex flex-col justify-around rounded-lg">
+              <h5 class="text-black font-bold text-[20px]">صنعـــاء</h5>
+              <h5 class="text-black font-bold text-[20px]">عـــــــــدن</h5>
+              <h5 class="text-black font-bold text-[20px]">10:30ص</h5>
+              <h5 class="text-black font-bold text-[20px]">  2025-2-5</h5>
+            </div>
+          </div>
+          <button class="bg-[#33387f] mx-auto mt-3 mb-3 text-white rounded-lg w-5/6 py-2">احجز مقعدك الان</button>
+        </div>
+        <!-- Card 3  -->
+        <div
+          class="relative shadow-md bg-white h-min w-full flex rounded-2xl flex-col justify-between overflow-hidden">
+          <img src="../../img/AlmahrahPost2020-06-07-978970.png" alt />
+          <div class="absolute  flex flex-col items-center left-[5px] top-[30%]">
+           <div class=" w-[80px] h-[80px] mb-[30px] shadow-2xl p-[2px] bg-white rounded-md">
+            <img
+            src="../../img/2020_toyota_land-cruiser_4dr-suv_base_fq_oem_2_1600-640x360.png"
+            width="100"
+             />
+           </div>
+             <h5 class="text-[40px] font-extrabold">12</h5>
+             <h5 class="text-[40px] font-extrabold">الف</h5>
+          </div>
+          <div class="flex mt-5 gap-2 w-5/6 mx-auto">
+            <div class="bg-[#9eefd9] py-2 px-1 h-[170px] flex flex-col justify-around rounded-lg">
+              <img src="../../img/location.svg copy.svg" width="24" />
+              <img src="../../img/location.svg copy.svg" width="24" />
+              <img src="../../img/image 1575.svg" width="24" />
+              <img src="../../img/calendar-check.svg" width="24" />
+            </div>
+            <div class="bg-[#9eefd9] py-2 items-center px-2 h-[170px] flex flex-col justify-around rounded-lg">
+              <h5 class="text-[#07002c] font-bold text-[16px]">مــــــن</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">إلــــــى</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">الوقت</h5>
+              <h5 class="text-[#07002c] font-bold text-[16px]">التاريخ</h5>
+            </div>
+            <div class="py-2 items-center px-2 h-[170px] flex flex-col justify-around rounded-lg">
+              <h5 class="text-black font-bold text-[20px]">صنعـــاء</h5>
+              <h5 class="text-black font-bold text-[20px]">عـــــــــدن</h5>
+              <h5 class="text-black font-bold text-[20px]">10:30ص</h5>
+              <h5 class="text-black font-bold text-[20px]">  2025-2-5</h5>
+            </div>
+          </div>
+          <button class="bg-[#33387f] mx-auto mt-3 mb-3 text-white rounded-lg w-5/6 py-2">احجز مقعدك الان</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full h-[130px] bg-[#252525]"></div>
+    <!-- section Serves 3 -->
+    <div class="w-[95%] bg-[#f0efef] mx-auto mt-7 flex-col flex items-center">
+      <!-- Title -->
+      <h5 class="text-[50px] font-bold text-[#3b3b3b]">خدماتنـــــــــا</h5>
+    </div>
+  </body>
+
 </html>
