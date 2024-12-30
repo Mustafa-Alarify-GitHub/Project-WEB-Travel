@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../../output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="w-full h-screen space-x-2">
+    <button onclick="openDialog('Dialog1')">Dialog 1</button>
+    <!-- Dialog 1 -->
+    <div id="Dialog1" class="custom-dialog" style="direction: rtl">
+      <div
+        class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
+      >
+        <h5 class="text-[30px] text-white ml-2">اضافة مركبة</h5>
+        <div class="flex-1 h-[2px] bg-white"></div>
+        <button class="text-3xl mx-2" onclick="openDialog('Dialog1')">X</button>
+      </div>
+      <form action class="flex flex-col p-4">
+        <div class="grid grid-cols-3 gap-2">
+          <div>
+            <select name id class="custom-input">
+              <option value>المديل</option>
+              <option value>مرسيدس</option>
+            </select>
+            <input type="text" class="custom-input" placeholder="الاسم" />
+            <input type="date" class="custom-input" placeholder="سنة الاصدار" />
+            <select name id class="custom-input">
+              <option value>الحالة</option>
+              <option value>مستعمل</option>
+              <option value>جديد</option>
+            </select>
+            <select name id class="custom-input">
+              <option value>السواق</option>
+            </select>
+            <input
+              type="number"
+              class="custom-input"
+              placeholder="رقم اللوحة"
+            />
+            <input
+              type="number"
+              class="custom-input"
+              placeholder="عدد الركاب"
+            />
+          </div>
+          <div>
+            <select name id class="custom-input">
+              <option value>نوع المحرك</option>
+              <option value>بترول</option>
+              <option value>غاز</option>
+              <option value>ديزل</option>
+              <option value>كهرباء</option>
+            </select>
+            <input
+              type="number"
+              class="custom-input"
+              name
+              id
+              placeholder="سعر المركبة"
+            />
+            <select name id class="custom-input">
+              <option value>تبعية المركبة</option>
+              <option value>تابعة للشركة</option>
+              <option value>للشركة اخرى</option>
+              <option value>لسواق</option>
+            </select>
+            <textarea name class="custom-input" rows="7"></textarea>
+          </div>
+          <div class="flex flex-col items-center pt-2">
+            <img
+              src="../../../img/2020_toyota_land-cruiser_4dr-suv_base_fq_oem_2_1600-640x360.png"
+              width="90%"
+              height="90%"
+              alt
+            />
+            <label for>
+              <input type="file" style="display: none" />
+              <button class="custom-input w-[200px]">اختار صورة</button>
+            </label>
+          </div>
+        </div>
+        <div class="w-full flex-row">
+          <button
+            class="w-[74%] py-1 text-white font-bold bg-primaryDialog rounded-md text-ellipsiswhite"
+          >
+            حفــــــــــــــــظ
+          </button>
+          <button
+            class="w-1/4 py-1 border font-bold border-primaryDialog rounded-md text-primaryDialog"
+          >
+            الغاء
+          </button>
+        </div>
+      </form>
+    </div>
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+    <button onclick="openDialog('Dialog2')">Dialog 2</button>
+    <!-- Dialog 2 -->
+    <div id="Dialog2" class="custom-dialog" style="direction: rtl">
+      <div
+        class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
+      >
+        <h5 class="text-[30px] text-white ml-2">اضافة موظف</h5>
+        <div class="flex-1 h-[2px] bg-white"></div>
+        <button class="text-3xl mx-2" onclick="openDialog('Dialog2')">X</button>
+      </div>
+      <form action class="flex flex-col p-4">
+        <div class="grid grid-cols-3 gap-2">
+          <div>
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="الاسم الرباعي"
+            />
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="المسمى الوظيفي"
+            />
+            <input type="text" class="custom-input" placeholder="الايميل" />
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="رقم الهاتف 1"
+            />
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="رقم الهاتف 2"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="اسم المستخدم"
+            />
+            <input
+              type="password"
+              class="custom-input"
+              placeholder="كلمة المرور"
+            />
+            <input
+              type="number"
+              class="custom-input"
+              placeholder="رقم البطاقة الشخصية"
+            />
+            <input
+              type="number"
+              class="custom-input"
+              placeholder="الراتب المالي"
+            />
+            <div class="flex gap-1">
+              <select name class="custom-input flex-1" id>
+                <option value>الجنس</option>
+                <option value>ذكر</option>
+                <option value>أنثئ</option>
+              </select>
+              <select name class="custom-input flex-1" id>
+                <option value>الجنسية</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex flex-col items-center pt-2">
+            <img
+              src="../../../img/icons8_collaborator_male_60px 2.png"
+              width="70%"
+              height="90%"
+              alt
+            />
+            <label for>
+              <input type="file" style="display: none" />
+              <button class="custom-input w-[200px]">اختار صورة</button>
+            </label>
+          </div>
+        </div>
+        <div class="w-full flex-row">
+          <button
+            class="w-[74%] py-1 text-white font-bold bg-primaryDialog rounded-md text-ellipsiswhite"
+          >
+            حفــــــــــــــــظ
+          </button>
+          <button
+            class="w-1/4 py-1 border font-bold border-primaryDialog rounded-md text-primaryDialog"
+          >
+            الغاء
+          </button>
+        </div>
+      </form>
+    </div>
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+    <button onclick="openDialog('Dialog3')">Dialog 3</button>
+    <!-- Dialog 3 -->
+    <div id="Dialog3" class="custom-dialog" style="direction: rtl">
+      <div
+        class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
+      >
+        <h5 class="text-[30px] text-white ml-2">اضافة مسافر</h5>
+        <div class="flex-1 h-[2px] bg-white"></div>
+        <button class="text-3xl mx-2" onclick="openDialog('Dialog3')">X</button>
+      </div>
+      <form action class="flex flex-col p-4">
+        <div class="grid grid-cols-3 gap-2">
+          <div>
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="الاسم الرباعي"
+            />
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="رقم البطاقة الشخصية"
+            />
+            <input type="text" class="custom-input" placeholder="رقم الجواز" />
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="رقم الهاتف 1"
+            />
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="رقم الهاتف 2"
+            />
+          </div>
+          <div>
+            <select name class="custom-input flex-1" id>
+              <option value>الرحلة</option>
+            </select>
+            <input type="text" class="custom-input" placeholder="العربون" />
+            <input
+              type="text"
+              class="custom-input"
+              placeholder="المتبقي"
+              disabled
+            />
+
+            <div class="flex gap-1">
+              <select name class="custom-input flex-1" id>
+                <option value>الجنس</option>
+                <option value>ذكر</option>
+                <option value>أنثئ</option>
+              </select>
+              <select name class="custom-input flex-1" id>
+                <option value>الجنسية</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex flex-col items-center pt-2">
+            <img
+              src="../../../img/icons8_identification_documents_50px 1.svg"
+              width="70%"
+              height="90%"
+              alt
+            />
+            <label for>
+              <input type="file" style="display: none" />
+              <button class="custom-input w-[200px]">صورة البطاقة</button>
+            </label>
+          </div>
+        </div>
+        <div class="w-full flex-row">
+          <button
+            class="w-[74%] py-1 text-white font-bold bg-primaryDialog rounded-md text-ellipsiswhite"
+          >
+            حفــــــــــــــــظ
+          </button>
+          <button
+            class="w-1/4 py-1 border font-bold border-primaryDialog rounded-md text-primaryDialog"
+          >
+            الغاء
+          </button>
+        </div>
+      </form>
+    </div>
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+    <button onclick="openDialog('print-report')">print-report</button>
+    <!-- print-report -->
+    <div id="print-report" class="custom-dialog w-[50%]" style="direction: rtl">
+      <div action class="flex flex-col p-4">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center">
+              <img
+                src="../../../img/icons8_receipt_240px_2 1.png"
+                width="80%"
+              />
+              <h1 class="text-[40px] w-full text-center font-bold">
+                طبـــــاعة فاتورة
+              </h1>
+              <button
+                class="w-full py-1 text-white font-bold mt-2 text-[24px] bg-primaryDialog text-ellipsiswhite"
+              >
+                طباعة
+              </button>
+              <button
+                class="w-full py-1 text-primaryDialog mt-2 font-bold text-[24px] border border-primaryDialog text-ellipsiswhite"
+              >
+                مشاركة
+              </button>
+            </div>
+            <button
+              class="w-full py-1 text-black mt-auto font-bold text-[24px] border border-black text-ellipsiswhite"
+            >
+              العودة
+            </button>
+          </div>
+          <div
+            class="rounded-lg border-2 border-black flex flex-col gap-2 items-center px-[10px] py-2"
+          >
+            <img src="../../../img/Group 1171275882.png" width="250px" />
+            <h4 class="text-black font-bold text-[24px]">صنعاني للرحلات</h4>
+            <div class="grid grid-cols-2 w-full">
+                <h5>رقم الفاتورة:   </h5>
+                <h5>524521561#</h5>
+            </div>
+            <div
+              class="grid grid-cols-2 border border-black rounded-md w-full py-1 px-[10px] font-extrabold"
+            >
+              <div>
+                <h5>لاســـــــــــــــــــــــــــم:</h5>
+                <h5>رقــــــم البـــــطاقة :</h5>
+                <h5>رقـــــم الرحـــــــــــــلة:</h5>
+                <h5>رقـــــم المقعــــــــــد:</h5>
+                <h5>نـــــوع المركبــــــــــة:</h5>
+                <h5>المــــــــــــــــــــدفوع:</h5>
+                <h5>المتبقــــــــــــــــــــي:</h5>
+              </div>
+              <div>
+                <h5 class="line-clamp-1">محمد محمد محمد</h5>
+                <h5 class="line-clamp-1">0000000000</h5>
+                <h5 class="line-clamp-1">0000</h5>
+                <h5 class="line-clamp-1">55</h5>
+                <h5 class="line-clamp-1">حافلة</h5>
+                <h5 class="line-clamp-1">10000</h5>
+                <h5 class="line-clamp-1">100</h5>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 border border-black rounded-md w-full py-1 px-[10px] font-extrabold"
+            >
+              <div>
+                <h5>تاريخ الحجــــــــــــــــز:</h5>
+                <h5>تاريخ السفـــــــــــــــر :</h5>
+         
+              </div>
+              <div>
+                <h5 class="line-clamp-1">2024-5-5</h5>
+                <h5 class="line-clamp-1">2024-5-5</h5>
+
+              </div>
+            </div>
+            <h5>للتواصل والاستفسار:</h5>
+            <h5>- 777777777-7333333333-01245786</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/dialog.js"></script>
+  </body>
+</html>
