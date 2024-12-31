@@ -10,7 +10,7 @@
 
   <body class="w-full h-screen space-x-2">
     <button onclick="openDialog('Dialog1')">Dialog 1</button>
-    <!-- Dialog 1 -->
+    <!-- Dialog 1 اضافة مركبة -->
     <div id="Dialog1" class="custom-dialog" style="direction: rtl">
       <div
         class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
@@ -101,7 +101,7 @@
 <!-- ****************************************************************** -->
 <!-- ****************************************************************** -->
     <button onclick="openDialog('Dialog2')">Dialog 2</button>
-    <!-- Dialog 2 -->
+    <!-- Dialog 2 اضافة موظف -->
     <div id="Dialog2" class="custom-dialog" style="direction: rtl">
       <div
         class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
@@ -198,7 +198,7 @@
 <!-- ****************************************************************** -->
 <!-- ****************************************************************** -->
     <button onclick="openDialog('Dialog3')">Dialog 3</button>
-    <!-- Dialog 3 -->
+    <!-- Dialog 3 اضافة مسافر -->
     <div id="Dialog3" class="custom-dialog" style="direction: rtl">
       <div
         class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
@@ -285,6 +285,246 @@
 <!-- ****************************************************************** -->
 <!-- ****************************************************************** -->
 <!-- ****************************************************************** -->
+<button onclick="openDialog('Dialog4')">Dialog 4</button>
+<!-- Dialog 4 اضافة سواق -->
+<div id="Dialog4" class="custom-dialog" style="direction: rtl">
+  <div
+    class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
+  >
+    <h5 class="text-[30px] text-white ml-2">اضافة سواق</h5>
+    <div class="flex-1 h-[2px] bg-white"></div>
+    <button class="text-3xl mx-2" onclick="openDialog('Dialog4')">X</button>
+  </div>
+  <form action class="flex flex-col p-4">
+    <div class="grid grid-cols-3 gap-2">
+      <div>
+        <input
+          type="text"
+          class="custom-input"
+          placeholder="الاسم الرباعي"
+        />
+
+        <select name class="custom-input flex-1" id>
+          <option value>سنين خبرة العمل</option>
+        </select>
+
+        <select name class="custom-input flex-1" id>
+          <option value>نوع السيارة للرحلة</option>
+        </select>
+        <input
+          type="text"
+          class="custom-input"
+          placeholder="رقم الهاتف 1"
+        />
+        <input
+          type="text"
+          class="custom-input"
+          placeholder="رقم الهاتف 2"
+        />
+      </div>
+
+
+      <div>
+        <select name class="custom-input flex-1" id>
+          <option value>نوع رخصة القيادة</option>
+        </select>
+        <input type="text" class="custom-input" placeholder="رقم البطاقة الشخصية" />
+        <input type="text" class="custom-input" placeholder="رقم الجواز" />
+
+
+        <div class="flex gap-1">
+          <select name class="custom-input flex-1" id>
+            <option value>الجنس</option>
+            <option value>ذكر</option>
+            <option value>أنثئ</option>
+          </select>
+          <select name class="custom-input flex-1" id>
+            <option value>الجنسية</option>
+          </select>
+        </div>
+      </div>
+      <div class="flex flex-col items-center pt-2">
+        <img
+          src="../../../img/icons8_collaborator_male_60px 2.png"
+          width="70%"
+          height="90%"
+          alt
+        />
+        <label for>
+          <input type="file" style="display: none" />
+          <button class="custom-input w-[200px]">اختار صورة</button>
+        </label>
+      </div>
+    </div>
+    <div class="w-full flex-row">
+      <button
+        class="w-[74%] py-1 text-white font-bold bg-primaryDialog rounded-md text-ellipsiswhite"
+      >
+        حفــــــــــــــــظ
+      </button>
+      <button
+        class="w-1/4 py-1 border font-bold border-primaryDialog rounded-md text-primaryDialog"
+      >
+        الغاء
+      </button>
+    </div>
+  </form>
+</div>
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<button onclick="openDialog('Dialog5')">Dialog 5</button>
+<!-- Dialog 5 اضافة رحلة-->
+<div id="Dialog5" class="custom-dialog" style="direction: rtl">
+  <div
+    class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
+  >
+    <h5 class="text-[30px] text-white ml-2">اضافة رحلة</h5>
+    <div class="flex-1 h-[2px] bg-white"></div>
+    <button class="text-3xl mx-2" onclick="openDialog('Dialog5')">X</button>
+  </div>
+  <form action class="flex flex-col p-4">
+    <div class="grid grid-cols-3 gap-2">
+      <div>
+        <input type="text" class="custom-input" placeholder="السفر من" />
+        <input type="text" class="custom-input" placeholder=" السفر الى" />
+        <div class="flex gap-2 ">
+          <select name class="custom-input flex-1 " id>
+            <option value>نوع السفر</option>
+            <option value>1</option>
+            <option value>2</option>
+          </select>
+          <select name class="custom-input flex-1 " id>
+            <option value>نوع الرحلة</option>
+          </select>
+        </div>
+
+        <select name id class="custom-input">
+          <option value>نوع السيارة للرحلة</option>
+        </select>
+
+        <input type="date" class="custom-input" placeholder="تاريخ و وقت السفر" />
+
+        <input
+          type="number"
+          class="custom-input"
+          placeholder="عدد المقاعد"
+        />
+        <input
+          type="number"
+          class="custom-input"
+          placeholder="سعر المقعد الواحد"
+        />
+      </div>
+
+      <div>
+
+        <textarea name class="custom-input" rows="14" placeholder="تفاصيل الرحلة"></textarea>
+      </div>
+      <div class="flex flex-col items-center pt-2">
+        <img
+          src="../../../img/2020_toyota_land-cruiser_4dr-suv_base_fq_oem_2_1600-640x360.png"
+          width="90%"
+          height="90%"
+          alt
+        />
+        <label for>
+          <input type="file" style="display: none" />
+          <button class="custom-input w-[200px]">اختار صورة</button>
+        </label>
+      </div>
+    </div>
+    <div class="w-full flex-row">
+      <button
+        class="w-[74%] py-1 text-white font-bold bg-primaryDialog rounded-md text-ellipsiswhite"
+      >
+        حفــــــــــــــــظ
+      </button>
+      <button
+        class="w-1/4 py-1 border font-bold border-primaryDialog rounded-md text-primaryDialog"
+      >
+        الغاء
+      </button>
+    </div>
+  </form>
+</div>
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<button onclick="openDialog('Dialog6')">Dialog 6</button>
+<!-- Dialog 6 اضافة فاتورة-->
+<div id="Dialog6" class="custom-dialog" style="direction: rtl">
+  <div
+    class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
+  >
+    <h5 class="text-[30px] text-white ml-2">اضافة فاتورة</h5>
+    <div class="flex-1 h-[2px] bg-white"></div>
+    <button class="text-3xl mx-2" onclick="openDialog('Dialog6')">X</button>
+  </div>
+  <form action class="flex flex-col p-4">
+    <div class="grid grid-cols-2 gap-2">
+      <div>
+        <input
+          type="text"
+          class="custom-input"
+          placeholder="الاسم الرباعي"
+        />
+        <input
+          type="text"
+          class="custom-input"
+          placeholder="رقم البطاقة الشخصية او جواز السفر" 
+        />
+        <input type="text" class="custom-input" placeholder="رقم الرحلة" />
+        <input
+          type="text"
+          class="custom-input"
+          placeholder="رقم المقعد"
+        />
+
+      </div>
+      <div>
+        <select name class="custom-input flex-1" id>
+          <option value>نوع المركبة</option>
+        </select>
+        <input type="text" class="custom-input" placeholder="المدفوع" />
+        <input
+          type="text"
+          class="custom-input"
+          placeholder="المتبقي"
+          disabled
+        />
+
+        <div class="flex gap-1">
+          <input type="date" class="custom-input flex-1" placeholder="تاريخ و وقت السفر" />
+
+          <input type="date" class="custom-input flex-1" placeholder="تاريخ و وقت السفر" />
+
+        </div>
+      </div>
+
+    </div>
+    <div class="w-full flex-row">
+      <button
+        class="w-[74%] py-1 text-white font-bold bg-primaryDialog rounded-md text-ellipsiswhite"
+      >
+        حفــــــــــــــــظ
+      </button>
+      <button
+        class="w-1/4 py-1 border font-bold border-primaryDialog rounded-md text-primaryDialog"
+      >
+        الغاء
+      </button>
+    </div>
+  </form>
+</div>
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+
+
+
+
+
     <button onclick="openDialog('print-report')">print-report</button>
     <!-- print-report -->
     <div id="print-report" class="custom-dialog w-[50%]" style="direction: rtl">

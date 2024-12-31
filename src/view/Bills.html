@@ -9,6 +9,7 @@
     <style>
     @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Reem+Kufi:wght@400..700&display=swap");
   </style>
+  <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <style>
   #app {
@@ -18,6 +19,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+  }
+  #headerd {
+    background-image:
+      url("../../img/header back copy 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 </style>
 
@@ -37,13 +44,14 @@
             </h5>
           </div>
   
-          <div
-            class="flex items-center justify-around text-black text-[14px] font-bold bg-[#d4d3d2] h-full mb-5 rounded-b-3xl w-1/2 -roun">
-            <a href>الرئيسية</a>
-            <a href>رحلات</a>
-            <a href>عنا</a>
-            <a href>تواصل معنا</a>
-          </div>
+          <div  id="header"
+          class="flex items-center justify-around text-black text-[14px] font-bold  h-full mb-5-3xl   w-1/3  ">
+          <img src="../../img/header back copy 2.png" width="50%" class="absolute ">
+          <a class="   z-10">الرئيسية</a>
+          <a class="  z-10">رحلات</a>
+          <a class="  z-10">عنا</a>
+          <a class="  z-10">تواصل معنا</a>
+        </div>
   
           <a href="./Register.html"
             class="text-[14px] px-4 py-1 text-white border border-white rounded-2xl">تسجيل
@@ -380,12 +388,76 @@ class="w-fit h-[130px] bg-[#4278FF] rounded-2xl px-4 py-8 flex justify-between i
 
 
 
-                      <button class="flex gap-[2px] bg-[#4278FF] mx-2 mt-3 mb-3  items-center  py-2 rounded-lg w-[170px]">
+                      <button onclick="openDialog('Dialog6')" class="flex gap-[2px] bg-[#4278FF] mx-2 mt-3 mb-3  items-center  py-2 rounded-lg w-[170px]">
                         <h5 class="text-white  pr-2">اضافة فاتورة جديده</h5>
                         <img class="" src="../../img/icons/add-circle.svg"alt />  
                       </button>
 
-
+                      <!-- Dialog 6 اضافة فاتورة-->
+                      <div id="Dialog6" class="custom-dialog" style="direction: rtl">
+                        <div
+                          class="w-full bg-primaryDialog flex items-center px-[25px] py-[10px]"
+                        >
+                          <h5 class="text-[30px] text-white ml-2">اضافة فاتورة</h5>
+                          <div class="flex-1 h-[2px] bg-white"></div>
+                          <button class="text-3xl mx-2" onclick="openDialog('Dialog6')">X</button>
+                        </div>
+                        <form action class="flex flex-col p-4">
+                          <div class="grid grid-cols-2 gap-2">
+                            <div>
+                              <input
+                                type="text"
+                                class="custom-input"
+                                placeholder="الاسم الرباعي"
+                              />
+                              <input
+                                type="text"
+                                class="custom-input"
+                                placeholder="رقم البطاقة الشخصية او جواز السفر" 
+                              />
+                              <input type="text" class="custom-input" placeholder="رقم الرحلة" />
+                              <input
+                                type="text"
+                                class="custom-input"
+                                placeholder="رقم المقعد"
+                              />
+                      
+                            </div>
+                            <div>
+                              <select name class="custom-input flex-1" id>
+                                <option value>نوع المركبة</option>
+                              </select>
+                              <input type="text" class="custom-input" placeholder="المدفوع" />
+                              <input
+                                type="text"
+                                class="custom-input"
+                                placeholder="المتبقي"
+                                disabled
+                              />
+                      
+                              <div class="flex gap-1">
+                                <input type="date" class="custom-input flex-1" placeholder="تاريخ و وقت السفر" />
+                      
+                                <input type="date" class="custom-input flex-1" placeholder="تاريخ و وقت السفر" />
+                      
+                              </div>
+                            </div>
+                      
+                          </div>
+                          <div class="w-full flex-row">
+                            <button
+                              class="w-[74%] py-1 text-white font-bold bg-primaryDialog rounded-md text-ellipsiswhite"
+                            >
+                              حفــــــــــــــــظ
+                            </button>
+                            <button
+                              class="w-1/4 py-1 border font-bold border-primaryDialog rounded-md text-primaryDialog"
+                            >
+                              الغاء
+                            </button>
+                          </div>
+                        </form>
+                      </div>
 
 
                       <div
@@ -425,8 +497,90 @@ class="w-fit h-[130px] bg-[#4278FF] rounded-2xl px-4 py-8 flex justify-between i
                                 <td class="px-4 py-2 border-b border-[#F5F0F1]">القيمة 3</td>
 
                                 <td class="px-1 py-2 border-b border-[#F5F0F1] flex flex-row gap-2 justify-center">
-                                    <button class="bg-[#4278FF]  text-[#ffffff] rounded-lg w-[100px] flex items-center gap-1 justify-center"><h6>اصدار فاتورة</h6> </button>
-                                        
+                                    <button onclick="openDialog('print-report')" class="bg-[#4278FF]  text-[#ffffff] rounded-lg w-[100px] flex items-center gap-1 justify-center"><h6>اصدار فاتورة</h6> </button>
+                                       
+                                    <!-- print-report -->
+                                    <div id="print-report" class="custom-dialog w-[50%]" style="direction: rtl">
+                                      <div action class="flex flex-col p-4">
+                                        <div class="grid grid-cols-2 gap-2">
+                                          <div class="flex flex-col items-center">
+                                            <div class="flex flex-col items-center">
+                                              <img
+                                                src="../../img/icons8_receipt_240px_2 1.png"
+                                                width="80%"
+                                              />
+                                              <h1 class="text-[40px] w-full text-center font-bold">
+                                                طبـــــاعة فاتورة
+                                              </h1>
+                                              <button
+                                                class="w-full py-1 text-white font-bold mt-2 text-[24px] bg-primaryDialog text-ellipsiswhite"
+                                              >
+                                                طباعة
+                                              </button>
+                                              <button
+                                                class="w-full py-1 text-primaryDialog mt-2 font-bold text-[24px] border border-primaryDialog text-ellipsiswhite"
+                                              >
+                                                مشاركة
+                                              </button>
+                                            </div>
+                                            <button onclick="openDialog('print-report')"
+                                              class="w-full py-1 text-black mt-auto font-bold text-[24px] border border-black text-ellipsiswhite"
+                                            >
+                                              العودة
+                                            </button>
+                                          </div>
+                                          <div
+                                            class="rounded-lg border-2 border-black flex flex-col gap-2 items-center px-[10px] py-2"
+                                          >
+                                            <img src="../../img/Group 1171275882.png" width="250px" />
+                                            <h4 class="text-black font-bold text-[24px]">صنعاني للرحلات</h4>
+                                            <div class="grid grid-cols-2 w-full">
+                                                <h5>رقم الفاتورة:   </h5>
+                                                <h5>524521561#</h5>
+                                            </div>
+                                            <div
+                                              class="grid grid-cols-2 border border-black rounded-md w-full py-1 px-[10px] font-extrabold"
+                                            >
+                                              <div>
+                                                <h5>الاســـــــــــــــــــــــــــم:</h5>
+                                                <h5>رقــــــم البـــــطاقة :</h5>
+                                                <h5>رقـــــم الرحـــــــــــــلة:</h5>
+                                                <h5>رقـــــم المقعــــــــــد:</h5>
+                                                <h5>نـــــوع المركبــــــــــة:</h5>
+                                                <h5>المــــــــــــــــــــدفوع:</h5>
+                                                <h5>المتبقــــــــــــــــــــي:</h5>
+                                              </div>
+                                              <div>
+                                                <h5 class="line-clamp-1">محمد محمد محمد</h5>
+                                                <h5 class="line-clamp-1">0000000000</h5>
+                                                <h5 class="line-clamp-1">0000</h5>
+                                                <h5 class="line-clamp-1">55</h5>
+                                                <h5 class="line-clamp-1">حافلة</h5>
+                                                <h5 class="line-clamp-1">10000</h5>
+                                                <h5 class="line-clamp-1">100</h5>
+                                              </div>
+                                            </div>
+                                            <div
+                                              class="grid grid-cols-2 border border-black rounded-md w-full py-1 px-[10px] font-extrabold"
+                                            >
+                                              <div>
+                                                <h5>تاريخ الحجــــــــــــــــز:</h5>
+                                                <h5>تاريخ السفـــــــــــــــر :</h5>
+                                         
+                                              </div>
+                                              <div>
+                                                <h5 class="line-clamp-1">2024-5-5</h5>
+                                                <h5 class="line-clamp-1">2024-5-5</h5>
+                                
+                                              </div>
+                                            </div>
+                                            <h5>للتواصل والاستفسار:</h5>
+                                            <h5>- 777777777-7333333333-01245786</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>  
+
                                 </td>
                             </tr>
 
@@ -481,6 +635,7 @@ class="w-fit h-[130px] bg-[#4278FF] rounded-2xl px-4 py-8 flex justify-between i
 
 
 
+<script src="./script/dialog.js"></script>
 
 
   </body>
